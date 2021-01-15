@@ -11,9 +11,8 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<h1>Hello, world!</h1>
-
-   <?php include 'includes/footer-js.php';?>
+    <?php include 'includes/navbar.php';?>
+    <?php include 'includes/footer-js.php';?>
 
 </body>
 </html>
