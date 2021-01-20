@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <?php include 'includes/header-css.php';?>
+    <?php include 'includes/header.php';?>
     <link rel="stylesheet" href="style.css" type="text/css">
 
 
@@ -60,7 +60,7 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
     </div>
-    <?php include 'includes/footer-js.php';?>
+    <?php include 'includes/footer.php';?>
 
 </body>
 </html>

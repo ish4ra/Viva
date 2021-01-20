@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <?php include 'includes/header-css.php';?>
+    <?php include 'includes/header.php';?>
     <link rel="stylesheet" href="style.css" type="text/css">
 
 
@@ -14,25 +14,33 @@
 </head>
 
 <body>
-<div class="container pt-5">
-    <div class="mx-auto card login-form" style="width: 450px">
-        <div class="card-body">
-            <form class="form-signin">
-                <img class="mb-4 mx-auto d-block logo" src="images/logo.png" alt="Logo" width="90" height="90">
-
-                <h3 id="mid" class="mb-3 font-weight-normal">Login</h3>
-
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email">
+ <?php include 'includes/navbar.php';?>
+<div class="row">
+    <div class="col-md-6 mx-auto p-0">
+        <div class="card">
+            <div class="login-box">
+                <div class="login-snip"> <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                    <div class="login-space">
+                        <div class="login">
+                            <div class="group"> <label for="user" class="label">Username</label> <input id="user" type="text" class="input" placeholder="Enter your username"> </div>
+                            <div class="group"> <label for="pass" class="label">Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Enter your password"> </div>
+                            <div class="group"> <input id="check" type="checkbox" class="check" checked> <label for="check"><span class="icon"></span> Keep me Signed in</label> </div>
+                            <div class="group"> <input type="submit" class="button" value="Sign In"> </div>
+                            <div class="hr"></div>
+                            <div class="foot"> <a href="#">Forgot Password?</a> </div>
+                        </div>
+                        <div class="sign-up-form">
+                            <div class="group"> <label for="user" class="label">Username</label> <input id="user" type="text" class="input" placeholder="Create your Username"> </div>
+                            <div class="group"> <label for="pass" class="label">Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Create your password"> </div>
+                            <div class="group"> <label for="pass" class="label">Repeat Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Repeat your password"> </div>
+                            <div class="group"> <label for="pass" class="label">Email Address</label> <input id="pass" type="text" class="input" placeholder="Enter your email address"> </div>
+                            <div class="group"> <input type="submit" class="button" value="Sign Up"> </div>
+                            <div class="hr"></div>
+                            <div class="foot"> <label for="tab-1">Already Member?</label> </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="pswd">Password:</label>
-                    <input type="password" class="form-control" name="password" id="pswd">
-                </div>
-                <button type="submit" class="btn btn-block btn-primary">Submit</button>
-                <p id="mid" class="text-muted pt-5">Copy right HakMe @2021</p>
-            </form>
+            </div>
         </div>
     </div>
 </div>
