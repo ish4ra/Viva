@@ -66,25 +66,27 @@ include './db_connection.php';
                     <td>Password</td>
                     <!--<td>type</td>-->
                     <td>update</td>
-                    <td>#</td>
+                    <td>delete</td>
+
+
                 </tr>
                 <?php
-                $query = "SELECT id,first_name,last_name,username,birthday,email,password FROM user";
+                $query = "SELECT id,name,email,address,mobile_number,zip_code,password FROM customer";
                 $result = $connection->query($query);
 
  while ($row = $result->fetch_assoc()) {
                     ?>
-                    <form action="updateuser.php" method="POST">
+                    <form action="update_customer.php" method="POST">
                         <tr>
-                            <td><input type="text" name="ID" id="ID" value="<?php echo $row["ID"]; ?>" /></td>
-                            <td><input type="text" name="Name" id="Name" value="<?php echo $row["Name"]; ?>" /></td>
-                            <td><input type="email" name="Email" id="Email" value="<?php echo $row["Email"]; ?>" /></td>
-                            <td><input type="text" name="Address" id="Address" value="<?php echo $row["Address"]; ?>" /></td>
-                            <td><input type="tel" name="Mobile number" id="Mobile number" value="<?php echo $row["Mobile number"]; ?>" /></td>
-                            <td><input type="email" name="email" id="email" value="<?php echo $row["email"]; ?>" /></td>
+                            <td><input type="text" name="Id" id="Id" value="<?php echo $row["id"]; ?>" /></td>
+                            <td><input type="text" name="Name" id="Name" value="<?php echo $row["name"]; ?>" /></td>
+                            <td><input type="email" name="Email" id="Email" value="<?php echo $row["email"]; ?>" /></td>
+                            <td><input type="text" name="Address" id="Address" value="<?php echo $row["address"]; ?>" /></td>
+                            <td><input type="tel" name="MobileNumber" id="Mobile number" value="<?php echo $row["mobile_number"]; ?>" /></td>
+                            <td><input type="text" name="Zipcode" id="email" value="<?php echo $row["zip_code"]; ?>" /></td>
                             <td><input type="password" name="password" id="password" value="<?php echo $row["password"]; ?>" /></td>
                             <td><input type="submit" value="Update" /></td>
-                            <td><a href="deleteUser.php?id=<?php echo $row["id"]; ?>">delete</a></td>
+                            <td><a href="delete_customer.php?id=<?php echo $row["id"]; ?>">delete</a></td>
 
                         </tr>
                     </form>
