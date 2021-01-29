@@ -84,7 +84,7 @@ include './db_connection.php';
                             <td><input type="text" name="Address" id="Address" value="<?php echo $row["address"]; ?>" /></td>
                             <td><input type="tel" name="MobileNumber" id="Mobile number" value="<?php echo $row["mobile_number"]; ?>" /></td>
                             <td><input type="text" name="Zipcode" id="email" value="<?php echo $row["zip_code"]; ?>" /></td>
-                            <td><input type="password" name="password" id="password" value="<?php echo $row["password"]; ?>" /></td>
+                            <td><input type="password" name=Password" id="password" value="<?php echo $row["password"]; ?>" /></td>
                             <td><input type="submit" value="Update" /></td>
                             <td><a href="delete_customer.php?id=<?php echo $row["id"]; ?>">delete</a></td>
 

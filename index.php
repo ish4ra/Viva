@@ -52,14 +52,103 @@
             <span class="visually-hidden">Next</span>
         </a>
     </div>
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+
+
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/products/key_croc.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">KEY CROC</h5>
+                        <p class="card-text">A keylogger armed with pentest tools, remote access and payloads that trigger multi-vector attacks when chosen keywords are typed.</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                <img src="images/products/lan-turtle.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">LAN TURTLE</h5>
+                    <p class="card-text">A Remote Access Toolkit posing as an ordinary USB Ethernet adapter. Drop it on a LAN for an instant backdoor shell. As seen on Mr. Robot.</p>
+                    <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                <img src="images/products/packet_squirrel.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">PACKET SQUIRREL</h5>
+                    <p class="card-text">A matchbook-sized linux box packing multiple network payloads - like packet sniffing, VPN tunneling and man-in-the-middle attacks.</p>
+                    <a href="#" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/products/plunderbug.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PLUNDER BUG</h5>
+                        <p class="card-text">A pocket-sized Smart LAN Tap with USB-C convenience for passive monitoring or active engagements on wired networks.</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/products/rubber_ducky.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">USB RUBBER DUCKY</h5>
+                        <p class="card-text">A "flash drive" that types keystroke injection payloads into unsuspecting computers at incredible speeds. As seen on Mr. Robot.</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/products/screen-crab.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SCREEN CRAB</h5>
+                        <p class="card-text">A stealthy video man-in-the-middle that captures screenshots or videos to disk and streams live to the Internet for remote viewing.</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/products/sharkjack.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SHARK JACK</h5>
+                        <p class="card-text">Jack into a network and instantly run advanced recon, exfiltration, attack and automation payloads.</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/products/wifi-pineapple.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">WIFI PINEAPPLE</h5>
+                        <p class="card-text">The infamous rogue access point and WiFi pentest platform. Its simple web interface hosts an app ecosystem. As seen on Silicon Valley.</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+
     <?php include 'includes/footer.php';?>
 
 </body>
